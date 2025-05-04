@@ -38,6 +38,18 @@ python-sonarqube-project/
 ├── sonar-project.properties
 └── Jenkinsfile
 
+sonar.projectKey=your_project_key       # Unique key for your project in SonarQube
+sonar.projectName=Your Project Name     # Friendly name displayed in SonarQube
+sonar.projectVersion=1.0                # Your project version
+
+sonar.sources=src                       # Folder containing source code
+sonar.language=java                     # Replace with your language (e.g., java, py, js)
+sonar.sourceEncoding=UTF-8
+
+# Optional for test coverage if using coverage.py (Python) or JaCoCo (Java)
+sonar.python.coverage.reportPaths=coverage.xml
+
+ 
 sonar.projectKey=python_project
 sonar.projectName=Python Calculator Project
 sonar.projectVersion=1.0
